@@ -9,3 +9,6 @@ targets:
         source: openapi
         codeSamples:
             output: codeSamples.yaml
+        # publish:
+        #     npm:
+        #         token: $NPM_TOKEN
