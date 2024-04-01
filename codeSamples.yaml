@@ -3,6 +3,12 @@ info:
   title: CodeSamples overlay for typescript target
   version: 0.0.0
 actions:
+  - target: $["paths"]["/pets"]["get"]
+    update:
+      x-codeSamples:
+        - lang: typescript
+          label: listPets
+          source: "import { PetSDK } from \"petsdk\";\n\nasync function run() {\n  const sdk = new PetSDK();\n\n  const limit = 21453;\n  \n  const result = await sdk.listPets(limit);\n\n  // Handle the result\n  console.log(result)\n}\n\nrun();"
   - target: $["paths"]["/pets"]["post"]
     update:
       x-codeSamples:
@@ -14,7 +20,7 @@ actions:
             async function run() {
               const sdk = new PetSDK();
 
-              const result = await sdk.createdPets({
+              const result = await sdk.createPets({
                 id: 596804,
                 name: "<value>",
               });
@@ -30,9 +36,3 @@ actions:
         - lang: typescript
           label: showPetById
           source: "import { PetSDK } from \"petsdk\";\n\nasync function run() {\n  const sdk = new PetSDK();\n\n  const petId = \"<value>\";\n  \n  const result = await sdk.showPetById(petId);\n\n  // Handle the result\n  console.log(result)\n}\n\nrun();"
-  - target: $["paths"]["/pets"]["get"]
-    update:
-      x-codeSamples:
-        - lang: typescript
-          label: listPets
-          source: "import { PetSDK } from \"petsdk\";\n\nasync function run() {\n  const sdk = new PetSDK();\n\n  const limit = 21453;\n  \n  const result = await sdk.listPets(limit);\n\n  // Handle the result\n  console.log(result)\n}\n\nrun();"
