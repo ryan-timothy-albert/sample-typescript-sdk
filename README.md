@@ -22,13 +22,13 @@ It has been generated successfully based on your OpenAPI spec. However, it is no
 ### NPM
 
 ```bash
-npm add https://github.com/ryan-timothy-albert/sample-typescript-sdk
+npm add petsdk
 ```
 
 ### Yarn
 
 ```bash
-yarn add https://github.com/ryan-timothy-albert/sample-typescript-sdk
+yarn add petsdk
 ```
 <!-- End SDK Installation [installation] -->
 

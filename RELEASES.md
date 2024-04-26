@@ -55,3 +55,13 @@ Based on:
 - Speakeasy CLI 1.274.1 (2.314.0) https://github.com/speakeasy-api/speakeasy
 ### Generated
 - [typescript v0.2.0] .
+
+## 2024-04-26 17:05:24
+### Changes
+Based on:
+- OpenAPI Doc  
+- Speakeasy CLI 1.275.0 (2.314.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [typescript v0.2.1] .
+### Releases
+- [NPM v0.2.1] https://www.npmjs.com/package/petsdk/v/0.2.1 - .
