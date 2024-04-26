@@ -46,12 +46,12 @@ For supported JavaScript runtimes, please consult [RUNTIMES.md](RUNTIMES.md).
 ```typescript
 import { PetSDK } from "petsdk";
 
-async function run() {
-    const sdk = new PetSDK();
+const petSDK = new PetSDK();
 
+async function run() {
     const limit = 21453;
 
-    const result = await sdk.pets.listPets(limit);
+    const result = await petSDK.pets.listPets(limit);
 
     // Handle the result
     console.log(result);
@@ -88,14 +88,14 @@ Validation errors can also occur when either method arguments or data returned f
 import { PetSDK } from "petsdk";
 import * as errors from "petsdk/models/errors";
 
-async function run() {
-    const sdk = new PetSDK();
+const petSDK = new PetSDK();
 
+async function run() {
     const limit = 21453;
 
     let result;
     try {
-        result = await sdk.pets.listPets(limit);
+        result = await petSDK.pets.listPets(limit);
     } catch (err) {
         switch (true) {
             case err instanceof errors.SDKValidationError: {
@@ -134,14 +134,14 @@ You can override the default server globally by passing a server index to the `s
 ```typescript
 import { PetSDK } from "petsdk";
 
-async function run() {
-    const sdk = new PetSDK({
-        serverIdx: 0,
-    });
+const petSDK = new PetSDK({
+    serverIdx: 0,
+});
 
+async function run() {
     const limit = 21453;
 
-    const result = await sdk.pets.listPets(limit);
+    const result = await petSDK.pets.listPets(limit);
 
     // Handle the result
     console.log(result);
@@ -159,14 +159,14 @@ The default server can also be overridden globally by passing a URL to the `serv
 ```typescript
 import { PetSDK } from "petsdk";
 
-async function run() {
-    const sdk = new PetSDK({
-        serverURL: "http://petstore.swagger.io/v1",
-    });
+const petSDK = new PetSDK({
+    serverURL: "http://petstore.swagger.io/v1",
+});
 
+async function run() {
     const limit = 21453;
 
-    const result = await sdk.pets.listPets(limit);
+    const result = await petSDK.pets.listPets(limit);
 
     // Handle the result
     console.log(result);
