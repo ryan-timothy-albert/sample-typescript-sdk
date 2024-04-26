@@ -3,15 +3,15 @@ id: 2611c30d-7cf6-4c05-ba5c-4ec1470aff4a
 management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
-  speakeasyVersion: 1.229.0
-  generationVersion: 2.292.0
-  releaseVersion: 0.1.2
-  configChecksum: 4edf2a4abe106baa96768ccb123fadca
+  speakeasyVersion: 1.274.1
+  generationVersion: 2.314.0
+  releaseVersion: 0.2.0
+  configChecksum: 7e2f53fa04ca851fe3c983f80e543833
   repoURL: https://github.com/ryan-timothy-albert/sample-typescript-sdk.git
   installationURL: https://github.com/ryan-timothy-albert/sample-typescript-sdk
 features:
   typescript:
-    core: 3.7.0
+    core: 3.9.0
     flattening: 2.81.1
     globalServerURLs: 2.82.4
     responseFormat: 0.2.3
@@ -21,6 +21,7 @@ generatedFiles:
   - .eslintrc.js
   - .npmignore
   - RUNTIMES.md
+  - jsr.json
   - package.json
   - src/index.ts
   - src/lib/base64.ts
