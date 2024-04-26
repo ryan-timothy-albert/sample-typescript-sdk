@@ -51,7 +51,7 @@ Based on:
 ## 2024-04-26 00:53:07
 ### Changes
 Based on:
-- OpenAPI Doc  
+- OpenAPI Docs  
 - Speakeasy CLI 1.274.1 (2.314.0) https://github.com/speakeasy-api/speakeasy
 ### Generated
 - [typescript v0.2.0] .
