@@ -3,12 +3,13 @@ id: 2611c30d-7cf6-4c05-ba5c-4ec1470aff4a
 management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
-  speakeasyVersion: 1.274.1
+  speakeasyVersion: 1.275.0
   generationVersion: 2.314.0
-  releaseVersion: 0.2.0
-  configChecksum: 7e2f53fa04ca851fe3c983f80e543833
+  releaseVersion: 0.2.1
+  configChecksum: 0714478d53c2d05c6bab629592d181a4
   repoURL: https://github.com/ryan-timothy-albert/sample-typescript-sdk.git
   installationURL: https://github.com/ryan-timothy-albert/sample-typescript-sdk
+  published: true
 features:
   typescript:
     core: 3.9.0
