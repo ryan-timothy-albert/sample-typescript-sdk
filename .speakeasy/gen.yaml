@@ -12,7 +12,7 @@ generation:
   auth:
     oAuth2ClientCredentialsEnabled: true
 typescript:
-  version: 0.2.1
+  version: 0.3.0
   additionalDependencies:
     dependencies: {}
     devDependencies: {}
@@ -32,6 +32,7 @@ typescript:
       webhooks: models/webhooks
   inputModelSuffix: input
   maxMethodParams: 4
+  methodArguments: require-security-and-request
   outputModelSuffix: output
   packageName: petsdk
   responseFormat: envelope-http

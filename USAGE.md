@@ -5,9 +5,7 @@ import { PetSDK } from "petsdk";
 const petSDK = new PetSDK();
 
 async function run() {
-    const limit = 21453;
-
-    const result = await petSDK.pets.listPets(limit);
+    const result = await petSDK.pets.listPets(21453);
 
     // Handle the result
     console.log(result);
