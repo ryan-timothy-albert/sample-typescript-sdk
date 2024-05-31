@@ -49,9 +49,7 @@ import { PetSDK } from "petsdk";
 const petSDK = new PetSDK();
 
 async function run() {
-    const limit = 21453;
-
-    const result = await petSDK.pets.listPets(limit);
+    const result = await petSDK.pets.listPets(21453);
 
     // Handle the result
     console.log(result);
@@ -91,11 +89,9 @@ import * as errors from "petsdk/models/errors";
 const petSDK = new PetSDK();
 
 async function run() {
-    const limit = 21453;
-
     let result;
     try {
-        result = await petSDK.pets.listPets(limit);
+        result = await petSDK.pets.listPets(21453);
     } catch (err) {
         switch (true) {
             case err instanceof errors.SDKValidationError: {
@@ -139,9 +135,7 @@ const petSDK = new PetSDK({
 });
 
 async function run() {
-    const limit = 21453;
-
-    const result = await petSDK.pets.listPets(limit);
+    const result = await petSDK.pets.listPets(21453);
 
     // Handle the result
     console.log(result);
@@ -164,9 +158,7 @@ const petSDK = new PetSDK({
 });
 
 async function run() {
-    const limit = 21453;
-
-    const result = await petSDK.pets.listPets(limit);
+    const result = await petSDK.pets.listPets(21453);
 
     // Handle the result
     console.log(result);
@@ -207,7 +199,7 @@ const httpClient = new HTTPClient({
 
 httpClient.addHook("beforeRequest", (request) => {
   const nextRequest = new Request(request, {
-    signal: request.signal || AbortSignal.timeout(5000);
+    signal: request.signal || AbortSignal.timeout(5000)
   });
 
   nextRequest.headers.set("x-custom-header", "custom value");

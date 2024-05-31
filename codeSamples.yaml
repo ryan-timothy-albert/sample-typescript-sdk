@@ -8,7 +8,19 @@ actions:
       x-codeSamples:
         - lang: typescript
           label: listPets
-          source: "import { PetSDK } from \"petsdk\";\n\nconst petSDK = new PetSDK();\n\nasync function run() {\n  const limit = 21453;\n  \n  const result = await petSDK.listPets(limit);\n\n  // Handle the result\n  console.log(result)\n}\n\nrun();"
+          source: |-
+            import { PetSDK } from "petsdk";
+
+            const petSDK = new PetSDK();
+
+            async function run() {
+              const result = await petSDK.pets.listPets(21453);
+
+              // Handle the result
+              console.log(result)
+            }
+
+            run();
   - target: $["paths"]["/pets"]["post"]
     update:
       x-codeSamples:
@@ -20,7 +32,7 @@ actions:
             const petSDK = new PetSDK();
 
             async function run() {
-              const result = await petSDK.createPets({
+              const result = await petSDK.pets.createPets({
                 id: 596804,
                 name: "<value>",
               });
@@ -35,4 +47,16 @@ actions:
       x-codeSamples:
         - lang: typescript
           label: showPetById
-          source: "import { PetSDK } from \"petsdk\";\n\nconst petSDK = new PetSDK();\n\nasync function run() {\n  const petId = \"<value>\";\n  \n  const result = await petSDK.showPetById(petId);\n\n  // Handle the result\n  console.log(result)\n}\n\nrun();"
+          source: |-
+            import { PetSDK } from "petsdk";
+
+            const petSDK = new PetSDK();
+
+            async function run() {
+              const result = await petSDK.pets.showPetById("<value>");
+
+              // Handle the result
+              console.log(result)
+            }
+
+            run();

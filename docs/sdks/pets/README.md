@@ -19,9 +19,7 @@ import { PetSDK } from "petsdk";
 const petSDK = new PetSDK();
 
 async function run() {
-  const limit = 21453;
-  
-  const result = await petSDK.pets.listPets(limit);
+  const result = await petSDK.pets.listPets(21453);
 
   // Handle the result
   console.log(result)
@@ -41,7 +39,7 @@ run();
 
 ### Response
 
-**Promise<[operations.ListPetsResponse](../../models/operations/listpetsresponse.md)>**
+**Promise\<[operations.ListPetsResponse](../../models/operations/listpetsresponse.md)\>**
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
@@ -83,7 +81,7 @@ run();
 
 ### Response
 
-**Promise<[operations.CreatePetsResponse](../../models/operations/createpetsresponse.md)>**
+**Promise\<[operations.CreatePetsResponse](../../models/operations/createpetsresponse.md)\>**
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
@@ -102,9 +100,7 @@ import { PetSDK } from "petsdk";
 const petSDK = new PetSDK();
 
 async function run() {
-  const petId = "<value>";
-  
-  const result = await petSDK.pets.showPetById(petId);
+  const result = await petSDK.pets.showPetById("<value>");
 
   // Handle the result
   console.log(result)
@@ -124,7 +120,7 @@ run();
 
 ### Response
 
-**Promise<[operations.ShowPetByIdResponse](../../models/operations/showpetbyidresponse.md)>**
+**Promise\<[operations.ShowPetByIdResponse](../../models/operations/showpetbyidresponse.md)\>**
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |

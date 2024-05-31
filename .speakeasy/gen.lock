@@ -3,19 +3,22 @@ id: 2611c30d-7cf6-4c05-ba5c-4ec1470aff4a
 management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
-  speakeasyVersion: 1.275.0
-  generationVersion: 2.314.0
-  releaseVersion: 0.2.1
-  configChecksum: 0714478d53c2d05c6bab629592d181a4
+  speakeasyVersion: 1.299.3
+  generationVersion: 2.338.7
+  releaseVersion: 0.3.0
+  configChecksum: f13b9061a6d851a44f40c3aa4b8e0e7c
   repoURL: https://github.com/ryan-timothy-albert/sample-typescript-sdk.git
   installationURL: https://github.com/ryan-timothy-albert/sample-typescript-sdk
   published: true
 features:
   typescript:
-    core: 3.9.0
+    additionalDependencies: 0.1.0
+    core: 3.9.10
     flattening: 2.81.1
+    globalSecurityCallbacks: 0.1.0
     globalServerURLs: 2.82.4
     responseFormat: 0.2.3
+    sdkHooks: 0.1.0
 generatedFiles:
   - src/sdk/pets.ts
   - src/sdk/sdk.ts
@@ -29,6 +32,7 @@ generatedFiles:
   - src/lib/config.ts
   - src/lib/encodings.ts
   - src/lib/http.ts
+  - src/lib/is-plain-object.ts
   - src/lib/retries.ts
   - src/lib/schemas.ts
   - src/lib/sdks.ts
@@ -38,6 +42,7 @@ generatedFiles:
   - src/models/errors/sdkerror.ts
   - src/models/errors/sdkvalidationerror.ts
   - src/types/blobs.ts
+  - src/types/enums.ts
   - src/types/index.ts
   - src/types/operations.ts
   - src/types/rfcdate.ts
