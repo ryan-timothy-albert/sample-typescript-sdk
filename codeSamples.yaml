@@ -3,24 +3,6 @@ info:
   title: CodeSamples overlay for typescript target
   version: 0.0.0
 actions:
-  - target: $["paths"]["/pets/{petId}"]["get"]
-    update:
-      x-codeSamples:
-        - lang: typescript
-          label: showPetById
-          source: |-
-            import { PetSDK } from "petsdk";
-
-            const petSDK = new PetSDK();
-
-            async function run() {
-              const result = await petSDK.pets.showPetById("<value>");
-
-              // Handle the result
-              console.log(result)
-            }
-
-            run();
   - target: $["paths"]["/pets"]["get"]
     update:
       x-codeSamples:
@@ -54,6 +36,24 @@ actions:
                 id: 596804,
                 name: "<value>",
               });
+
+              // Handle the result
+              console.log(result)
+            }
+
+            run();
+  - target: $["paths"]["/pets/{petId}"]["get"]
+    update:
+      x-codeSamples:
+        - lang: typescript
+          label: showPetById
+          source: |-
+            import { PetSDK } from "petsdk";
+
+            const petSDK = new PetSDK();
+
+            async function run() {
+              const result = await petSDK.pets.showPetById("<value>");
 
               // Handle the result
               console.log(result)
