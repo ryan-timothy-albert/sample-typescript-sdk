@@ -3,17 +3,17 @@ id: 2611c30d-7cf6-4c05-ba5c-4ec1470aff4a
 management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
-  speakeasyVersion: 1.299.4
-  generationVersion: 2.338.7
-  releaseVersion: 0.3.1
-  configChecksum: 46284a8a009014daffc847bc44e6b828
+  speakeasyVersion: 1.325.0
+  generationVersion: 2.356.0
+  releaseVersion: 0.4.0
+  configChecksum: e569092761f7f54f8d2e1898be0b6c58
   repoURL: https://github.com/ryan-timothy-albert/sample-typescript-sdk.git
   installationURL: https://github.com/ryan-timothy-albert/sample-typescript-sdk
   published: true
 features:
   typescript:
     additionalDependencies: 0.1.0
-    core: 3.9.10
+    core: 3.10.2
     flattening: 2.81.1
     globalSecurityCallbacks: 0.1.0
     globalServerURLs: 2.82.4
@@ -22,7 +22,7 @@ features:
 generatedFiles:
   - src/sdk/pets.ts
   - src/sdk/sdk.ts
-  - .eslintrc.js
+  - .eslintrc.cjs
   - .npmignore
   - RUNTIMES.md
   - jsr.json
@@ -33,6 +33,7 @@ generatedFiles:
   - src/lib/encodings.ts
   - src/lib/http.ts
   - src/lib/is-plain-object.ts
+  - src/lib/primitives.ts
   - src/lib/retries.ts
   - src/lib/schemas.ts
   - src/lib/sdks.ts

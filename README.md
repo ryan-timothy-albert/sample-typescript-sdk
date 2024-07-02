@@ -25,10 +25,25 @@ It has been generated successfully based on your OpenAPI spec. However, it is no
 npm add petsdk
 ```
 
+### PNPM
+
+```bash
+pnpm add petsdk
+```
+
+### Bun
+
+```bash
+bun add petsdk
+```
+
 ### Yarn
 
 ```bash
-yarn add petsdk
+yarn add petsdk zod
+
+# Note that Yarn does not install peer dependencies automatically. You will need
+# to install zod as shown above.
 ```
 <!-- End SDK Installation [installation] -->
 
@@ -84,7 +99,7 @@ Validation errors can also occur when either method arguments or data returned f
 
 ```typescript
 import { PetSDK } from "petsdk";
-import * as errors from "petsdk/models/errors";
+import { SDKValidationError } from "petsdk/models/errors";
 
 const petSDK = new PetSDK();
 
@@ -94,7 +109,7 @@ async function run() {
         result = await petSDK.pets.listPets(21453);
     } catch (err) {
         switch (true) {
-            case err instanceof errors.SDKValidationError: {
+            case err instanceof SDKValidationError: {
                 // Validation errors can be pretty-printed
                 console.error(err.pretty());
                 // Raw value may also be inspected
